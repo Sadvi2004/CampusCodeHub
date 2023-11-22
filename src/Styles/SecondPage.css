@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1a1203;
+}
+.sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45%;
+  color: #d5cea3;
+}
+.subsub {
+  font-size: 1.2rem;
+  color: #d5cea3;
+  margin-top: 2rem;
+}
