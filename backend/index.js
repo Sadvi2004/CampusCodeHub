@@ -12,7 +12,7 @@ app.use("/files", express.static("files"));
 // const jwt_SECRET = "dfajbhfjshjevbwajeh3i4283ud9w829";
 //database-------------------------------------------------------
 const mongoUrl =
-  "mongodb+srv://bsadvi2004:FIREWIN1509T@cluster0.l9nvuzv.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://2211cs010067:FIREWIN1509T@cluster0.p2eyg1r.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(mongoUrl, {
     useNewUrlparser: true,
