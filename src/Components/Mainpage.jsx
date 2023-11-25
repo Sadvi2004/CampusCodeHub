@@ -35,56 +35,64 @@ function Mainpage() {
             <th>Rating</th>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            {/* onchange={(e) => setApplication(e.target.value)} */}
-            <td>Row 1, Cell 3</td>
+            <td>1</td>
+            <td>HospitalManagement</td>
+            <td>HM</td>
+            <td>File</td>
+            <td>Documentation</td>
             <td>
-              <input type="file" accept="application/pdf" />
-              {/* onchange={(e) => setFile(e.target.files[0])} */}
+              <input type="number" min={1} max={10} />
             </td>
-            <td>Row 1, Cell 5</td>
-            <td>Row 1, Cell 6</td>
           </tr>
           <tr>
-            <td>Row 2, Cell 1</td>
-            <td>Row 2, Cell 2</td>
-            <td>Row 2, Cell 3</td>
-            <td>Row 2, Cell 4</td>
-            <td>Row 2, Cell 5</td>
-            <td>Row 2, Cell 6</td>
+            <td>2</td>
+            <td>RestaurentManagement</td>
+            <td>HM</td>
+            <td>File</td>
+            <td>Documentation</td>
+            <td>
+              <input type="number" min={1} max={10} />
+            </td>
           </tr>
           <tr>
-            <td>Row 3, Cell 1</td>
-            <td>Row 3, Cell 2</td>
-            <td>Row 3, Cell 3</td>
-            <td>Row 3, Cell 4</td>
-            <td>Row 3, Cell 5</td>
-            <td>Row 3, Cell 6</td>
+            <td>3</td>
+            <td>HouseRentelManagement</td>
+            <td>HM</td>
+            <td>File</td>
+            <td>Documentation</td>
+            <td>
+              <input type="number" min={1} max={10} />
+            </td>
           </tr>
           <tr>
-            <td>Row 4, Cell 1</td>
-            <td>Row 4, Cell 2</td>
-            <td>Row 4, Cell 3</td>
-            <td>Row 4, Cell 4</td>
-            <td>Row 4, Cell 5</td>
-            <td>Row 4, Cell 6</td>
+            <td>4</td>
+            <td>HostelManagement</td>
+            <td>HM</td>
+            <td>File</td>
+            <td>Documentation</td>
+            <td>
+              <input type="number" min={1} max={10} />
+            </td>
           </tr>
           <tr>
-            <td>Row 5, Cell 1</td>
-            <td>Row 5, Cell 2</td>
-            <td>Row 5, Cell 3</td>
-            <td>Row 5, Cell 4</td>
-            <td>Row 5, Cell 5</td>
-            <td>Row 5, Cell 6</td>
+            <td>5</td>
+            <td>LibraryManagement</td>
+            <td>HM</td>
+            <td>File</td>
+            <td>Documentation</td>
+            <td>
+              <input type="number" min={1} max={10} />
+            </td>
           </tr>
           <tr>
-            <td>Row 6, Cell 1</td>
-            <td>Row 6, Cell 2</td>
-            <td>Row 6, Cell 3</td>
-            <td>Row 6, Cell 4</td>
-            <td>Row 6, Cell 5</td>
-            <td>Row 6, Cell 6</td>
+            <td>6</td>
+            <td>FlashCards</td>
+            <td>FC</td>
+            <td>File</td>
+            <td>Documentation</td>
+            <td>
+              <input type="number" min={1} max={10} />
+            </td>
           </tr>
         </table>
       </div>
