@@ -17,8 +17,8 @@ function Login() {
       password: "sadvi",
     },
     {
-      username: "jordiaaaaaaa@mallareddyuniversity.ac.in",
-      password: "pucking",
+      username: "2211cs010064@mallareddyuniversity.ac.in",
+      password: "hiii",
     },
   ];
 

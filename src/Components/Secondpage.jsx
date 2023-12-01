@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import "../Styles/SecondPage.css";
 import axios from "axios";
+// import Secondpage from ".//Secondpage.jsx";
 
 function Secondpage() {
   const [title, setTitle] = useState("");

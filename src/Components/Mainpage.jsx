@@ -1,18 +1,9 @@
 import React from "react";
 import "../Styles/Mainpage.css";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import Login from "./Login";
 
 function Mainpage() {
-  // const [application, setApplication] = useState("");
-  // const [file, setFile] = useState("");
-  // const submitImage = async (e) => {
-  //   e.preventDefault();
-  //   const formData = new FormData();
-  //   formData.append("application", application);
-  //   formData.append("file", file);
-  //   console.log(application, file);
-  // };
   return (
     <div className="upper">
       <nav className="container3">
@@ -22,7 +13,9 @@ function Mainpage() {
           className="search-contain"
           placeholder="Search Applications"
         />
-        <button className="bt-login">Login</button>
+        <Link to="/Login" style={{ textDecoration: "none" }}>
+          <button className="bt-login">Login</button>
+        </Link>
       </nav>
       <div className="container4">
         <table class="custom-table">
@@ -95,13 +88,16 @@ function Mainpage() {
             </td>
           </tr>
         </table>
+        <div className="edit">
+          <Link to="/Editor" style={{ textDecoration: "none" }}>
+            <button className="edit-App">CheckEditor</button>
+          </Link>
+        </div>
       </div>
       <div className="upload">
         <Link to="/Secondpage" style={{ textDecoration: "none" }}>
           <button className="b-log">Upload Your Aplications</button>
         </Link>
-        {/* onSubmit= */}
-        {/* {submitImage} */}
       </div>
     </div>
   );

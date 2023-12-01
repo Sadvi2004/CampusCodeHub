@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 import Login from "./Components/Login";
 import Mainpage from "./Components/Mainpage";
 import Secondpage from "./Components/Secondpage";
+import Editor from "./Components/Editor";
 
 import "./index.css";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/mainpage" element={<Mainpage />} />
           <Route path="/Secondpage" element={<Secondpage />} />
+          <Route path="/editor" element={<Editor />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
