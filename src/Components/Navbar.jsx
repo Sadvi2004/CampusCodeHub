@@ -12,8 +12,8 @@ function Navbar() {
         <Link to="/about" style={{ textDecoration: "none" }}>
           <li>About</li>
         </Link>
-        <Link to="/contact" style={{ textDecoration: "none" }}>
-          <li>Contact</li>
+        <Link to="/Login" style={{ textDecoration: "none" }}>
+          <li>Login</li>
         </Link>
       </ul>
     </div>

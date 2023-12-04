@@ -17,9 +17,12 @@ const Editor = () => {
   return (
     <div className="container">
       <div className="left">
-        <label>
-          <i className="fab fa-html5"></i> HTML
-        </label>
+        <div className="pane">
+          HTML
+          <button onClick={run} className="clkon">
+            Run
+          </button>
+        </div>
         <textarea
           value={htmlCode}
           onChange={(e) => setHtmlCode(e.target.value)}
@@ -47,9 +50,6 @@ const Editor = () => {
         </label>
         <iframe id="output"></iframe>
       </div>
-      <button onClick={run} className="clkon">
-        Run
-      </button>
     </div>
   );
 };

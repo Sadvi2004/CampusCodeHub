@@ -1,0 +1,19 @@
+m-container {
+  text-wrap: wrap;
+}
+.subclass {
+  margin-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35rem;
+  color: #e5e5cb;
+  /* border: solid lawngreen; */
+}
+.childclass {
+  display: flex;
+  justify-content: center;
+}

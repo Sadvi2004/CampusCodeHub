@@ -48,40 +48,30 @@ function Secondpage() {
           type="text"
           name="text"
           id="inputs"
-          required
           onChange={(e) => setTitle(e.target.value)}
         />
         <br />
-        {/* <label htmlFor="#">GroupName : </label>
-        <input type="text" name="text" />
-        <br /> */}
         <label htmlFor="#">ZipFiles : </label>
         <input
           type="file"
-          accept="application/pdf"
+          accept="application/zip"
           id="inputs"
           required
           onChange={(e) => setFile(e.target.files[0])}
         />
         <br />
-        {/* <label htmlFor="#">Preview : </label>
-        <input type="file" accept="application/pdf" />
-        <br /> */}
         <button className="subsub">Submit</button>
       </form>
-      <div className="uploaded">
-        <h4>Uploaded Pdf:</h4>
+      <div className="uploadeddata">
+        <h4>Uploaded zipfiles:</h4>
         <div className="output-div">
           {allImage == null
             ? ""
             : allImage.map((data) => {
                 return (
                   <div className="inner-div">
-                    <h6>Title: {data.title}</h6>
-                    <button
-                      className="btn-primary"
-                      onClick={() => showPdf(data.pdf)}
-                    >
+                    <h5>Title: {data.title}</h5>
+                    <button className="pp" onClick={() => showPdf(data.pdf)}>
                       Show pdf
                     </button>
                   </div>
