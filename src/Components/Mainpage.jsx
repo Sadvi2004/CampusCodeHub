@@ -22,67 +22,53 @@ function Mainpage() {
           <tr>
             <th>Sno</th>
             <th>Application Name</th>
-            <th>Group Name</th>
-            <th>Zip Files</th>
-            <th>Preview</th>
+            <th>Description</th>
             <th>Rating</th>
           </tr>
           <tr>
             <td>1</td>
-            <td>HospitalManagement</td>
-            <td>HM</td>
-            <td>File</td>
-            <td>Documentation</td>
+            <td>Hospital Management</td>
+            <td>
+              <Link to="/description1" style={{ textDecoration: "none" }}>
+                <button className="open">Open</button>
+              </Link>
+            </td>
             <td>
               <input type="number" min={1} max={10} />
             </td>
           </tr>
           <tr>
             <td>2</td>
-            <td>RestaurentManagement</td>
-            <td>HM</td>
-            <td>File</td>
-            <td>Documentation</td>
+            <td>Restaurent Management</td>
+            <td>
+              <Link to="/description2" style={{ textDecoration: "none" }}>
+                <button className="open">Open</button>
+              </Link>
+            </td>
             <td>
               <input type="number" min={1} max={10} />
             </td>
           </tr>
           <tr>
             <td>3</td>
-            <td>HouseRentelManagement</td>
-            <td>HM</td>
-            <td>File</td>
-            <td>Documentation</td>
+            <td>Hostel Management</td>
+            <td>
+              <Link to="/description4" style={{ textDecoration: "none" }}>
+                <button className="open">Open</button>
+              </Link>
+            </td>
             <td>
               <input type="number" min={1} max={10} />
             </td>
           </tr>
           <tr>
             <td>4</td>
-            <td>HostelManagement</td>
-            <td>HM</td>
-            <td>File</td>
-            <td>Documentation</td>
+            <td>Library Management</td>
             <td>
-              <input type="number" min={1} max={10} />
+              <Link to="/description5" style={{ textDecoration: "none" }}>
+                <button className="open">Open</button>
+              </Link>
             </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>LibraryManagement</td>
-            <td>HM</td>
-            <td>File</td>
-            <td>Documentation</td>
-            <td>
-              <input type="number" min={1} max={10} />
-            </td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>FlashCards</td>
-            <td>FC</td>
-            <td>File</td>
-            <td>Documentation</td>
             <td>
               <input type="number" min={1} max={10} />
             </td>

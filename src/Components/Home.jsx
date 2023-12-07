@@ -27,10 +27,7 @@ function Home() {
             boards, enabling transparent and effective communication for project
             enhancements. Open-Source Community: CampusCodeHub fosters a vibrant
             community of developers, encouraging code sharing, contribution to
-            projects, and learning from diverse resources. Workflow Automation:
-            With CampusCodeHub Actions, users automate processes like testing,
-            building, and deploying code, streamlining development workflows for
-            increased efficiency.
+            projects, and learning from diverse resources.
           </p>
         </div>
         <div className="card-info">
@@ -42,15 +39,7 @@ function Home() {
             projects. Support Open Source: CampusCodeHub is committed to
             supporting and fostering the open-source community. It encourages
             developers to share code, contribute to open-source projects, and
-            learn from a diverse range of resources. Enable Efficient
-            Development: CampusCodeHub strives to enable efficient development
-            workflows by offering version control, project management tools, and
-            automation capabilities. This helps developers streamline their
-            processes and increase productivity. Build a Strong Developer
-            Community: CampusCodeHub seeks to build and nurture a strong,
-            inclusive developer community where individuals can connect, learn,
-            and grow. It promotes collaboration, learning, and the exchange of
-            ideas among developers in colleges and university.
+            learn from a diverse range of resources.
           </p>
         </div>
       </div>

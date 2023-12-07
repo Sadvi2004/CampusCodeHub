@@ -4,7 +4,7 @@ import "../Styles/About.css";
 function About() {
   return (
     <div className="m-container">
-      <h1 className="childclass">About CampusCodeHub</h1>
+      <h2 className="childclass">About CampusCodeHub</h2>
       <p className="subclass">
         Welcome to Your Website, we are passionate about harnessing the power of
         CampusCodeHub and enabling users to leverage its incredible

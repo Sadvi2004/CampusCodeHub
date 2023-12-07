@@ -72,7 +72,7 @@ function Secondpage() {
                   <div className="inner-div">
                     <h5>Title: {data.title}</h5>
                     <button className="pp" onClick={() => showPdf(data.pdf)}>
-                      ShowFiles
+                      Download
                     </button>
                   </div>
                 );

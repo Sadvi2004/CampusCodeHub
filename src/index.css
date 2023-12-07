@@ -59,9 +59,6 @@ li {
   cursor: pointer;
   border-radius: 5px;
 }
-.footer {
-  background-color: #1a120b;
-}
 
 .nav-link,
 .text-center {
@@ -70,6 +67,7 @@ li {
 
 ::-webkit-scrollbar {
   width: 0.5em;
+  height: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
@@ -81,6 +79,19 @@ li {
   background: #b4743c;
   border-radius: 50px;
 }
-.footerdata {
-  width: 100%;
+
+.afopen {
+  padding: 2em 15em;
+}
+
+.description-text {
+  font-size: 15px;
+}
+.ace-editor {
+  background-color: #ccc;
+  color: #000;
+}
+
+.code-img {
+  width: 50em;
 }
