@@ -145,6 +145,154 @@ function Description5() {
               <img src="../images/videolib.png" alt="" className="code-img" />
             </p>
           </div>
+          <h2>Most used basic HTML TAGS to make website</h2>
+          <h3>HTML Buttons</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/tags/tag_button.asp">
+                  Source code for HTML buttons.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML Forms</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_forms.asp">
+                  Source code for HTML forms.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML navbar</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/howto/howto_js_topnav.asp">
+                  Source code for nav bar.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML input types</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_form_input_types.asp">
+                  Source code for html input types.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML image types</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_images.asp">
+                  Source code for images.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML link tags</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_links.asp">
+                  Source to link a url
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML paragraph</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_paragraphs.asp">
+                  Source code to write paragraph in html.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML headings</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/html/html_headings.asp">
+                  Source code to write headinds in html
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>HTML list tag</h3>
+          <ol>
+            <li>
+              <a href="https://www.w3schools.com/html/html_lists.asp">
+                Source code to write list tag
+              </a>
+            </li>
+          </ol>
+          <h2>Most used basic CSS TAGS to make style the website</h2>
+          <h3>CSS buttons</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/css/css3_buttons.asp">
+                  Source code to style the buttons.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>CSS form</h3>
+          <p>
+            <ol>
+              <li>
+                <a href="https://www.w3schools.com/css/css_form.asp">
+                  {" "}
+                  Source code to style the form.
+                </a>
+              </li>
+            </ol>
+          </p>
+          <h3>CSS navbar</h3>
+          <ol>
+            <li>
+              <a href="https://www.w3schools.com/css/css_navbar.asp">
+                Source code to style the navbar.
+              </a>
+            </li>
+          </ol>
+          <h3>CSS input</h3>
+          <ol>
+            <li>
+              <a href="https://www.w3schools.com/w3css/w3css_input.asp">
+                Source code to style the inputs.
+              </a>
+            </li>
+          </ol>
+          <h3>CSS images</h3>
+          <ol>
+            <li>
+              <a href="https://www.w3schools.com/css/css3_images.asp">
+                {" "}
+                Source code to style the images.
+              </a>
+            </li>
+          </ol>
+          <h3>CSS selectors</h3>
+          <ol>
+            <li>
+              <a href="https://www.w3schools.com/css/css_selectors.asp">
+                Selectors :
+              </a>
+              select the following html tags
+              like(ptage,headingtage,.classtage,#idtage etc..) to write your own
+              css
+            </li>
+          </ol>
+          <h3>By using above html and css basics you can make any website.</h3>
         </p>
       </div>
       <p className="futher-details">
