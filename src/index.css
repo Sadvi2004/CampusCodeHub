@@ -2,18 +2,18 @@
 * {
   margin: 0px;
   font-family: "Inter", sans-serif;
-  color: var(--text-color-200);
+  color: var(--text-color-100);
+  background-color: var(--background-color);
 }
 
 :root {
-  --text-color-100: #e5e5cc;
-  --text-color-opacity-low: rgb(229, 229, 204, 0.5);
-  --background-color: #1a120b;
-  --text-color-200: #d5cea3;
+  --text-color-100: #0b0b0c;
+  --background-color: #fff;
+  --background-color-100: hsl(0, 0%, 100%, 0.1);
 }
 
 .logo {
-  color: #d5cea3;
+  color: var(--text-color-100);
   margin: 10px;
   font-size: 1.5rem;
   letter-spacing: -2px;
@@ -27,33 +27,37 @@ p:hover {
 ul {
   margin: 12px;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   justify-content: flex-end;
   font-size: 1.2rem;
   list-style: none;
+}
+.nav-link-nav {
+  background-color: var(--background-color-100);
 }
 .container-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1a120b;
+  background-color: var(--background-color-100);
   position: sticky;
   padding: 0 20px;
   top: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--text-color-100);
+  backdrop-filter: blur(10px);
 }
 li {
-  color: #e5e5cb;
+  color: var(--text-color-100);
 }
 .container2 {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background-color: #1a120b;
+  background-color: var(--background-color);
 }
 .btn-more {
-  background-color: #d5cea3;
-  color: #1a120b;
+  background-color: var(--background-color);
+  color: var(--text-color-100);
   font-size: 16px;
   padding: 12px 24px;
   cursor: pointer;
@@ -62,7 +66,7 @@ li {
 
 .nav-link,
 .text-center {
-  color: var(--text-color);
+  color: var(--text-color-100);
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +75,7 @@ li {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--text-color);
+  background: var(--background-color);
   border-radius: 50px;
 }
 
@@ -82,11 +86,13 @@ li {
 
 .afopen {
   padding: 2em 15em;
+  text-align: justify;
 }
 
 .description-text {
   font-size: 15px;
 }
+
 .ace-editor {
   background-color: #ccc;
   color: #000;
@@ -94,4 +100,12 @@ li {
 
 .code-img {
   width: 50em;
+}
+.back-ln {
+  display: flex;
+}
+.btt-back {
+  margin-left: 30rem;
+  font-size: 20px;
+  border-radius: 5px;
 }

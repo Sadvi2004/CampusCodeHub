@@ -1,5 +1,5 @@
 .upper {
-  background-color: #1a120b;
+  background-color: var(--background-color);
 }
 .container3 {
   height: 60px;
@@ -7,7 +7,7 @@
   justify-content: end;
 }
 .search-contain {
-  border: 2px solid #3c2a21;
+  border: 2px solid var(--text-color-100);
   margin-right: 1.2rem;
   margin: 2rem;
   width: 50%;
@@ -18,7 +18,7 @@
   border-radius: 5rem;
 }
 .bt-login {
-  border-radius: 1.3rem;
+  border-radius: 5px;
   margin: 1.9rem;
   margin-right: 1.2rem;
   padding-top: 0.5rem;
@@ -40,10 +40,10 @@
 
 .custom-table th,
 .custom-table td {
-  border: 1px solid #3c2a21;
+  border: 1px solid var(--text-color-100);
   padding: 8px;
   text-align: center;
-  color: #e5e5cb;
+  color: var(--text-color-100);
 }
 .upload {
   display: flex;
@@ -58,7 +58,7 @@
 }
 
 .edit-App {
-  border-radius: 2rem;
+  border-radius: 5px;
   padding-top: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -67,9 +67,12 @@
 .b-log {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  border-radius: 2rem;
+  border-radius: 5px;
   padding-top: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.open {
+  border-radius: 5px;
 }

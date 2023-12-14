@@ -1,9 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Description4() {
   return (
     <div className="afopen">
-      <h3>HostelManagement</h3>
+      <div className="back-ln">
+        <h3>
+          HostelManagement
+          <Link to="/MainPage" style={{ textDecoration: "none" }}>
+            <button className="btt-back">Back</button>
+          </Link>
+        </h3>
+      </div>
       <p className="description-text">
         Hostel management involves overseeing the efficient operation of
         residential facilities, catering to the needs of residents, and ensuring

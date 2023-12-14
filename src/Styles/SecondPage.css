@@ -1,6 +1,3 @@
-* {
-  background-color: #1a1203;
-}
 .sp {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -29,7 +26,7 @@
 .usersec button {
   padding: 8px 16px;
   background-color: #007bff;
-  color: #fff;
+  color: var(--text-color-100);
   border: none;
   cursor: pointer;
   margin-left: 0.5rem;
@@ -37,7 +34,7 @@
 }
 
 .uploadeddata {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--text-color-100);
   padding-top: 20px;
 }
 
@@ -47,17 +44,22 @@
   justify-content: center;
 }
 .output-div {
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
+  margin-left: 13rem;
   flex-wrap: wrap;
+  width: 70%;
+  height: 42vh;
 }
 
 .inner-div {
-  border: 1px solid #ccc;
+  border: 1px solid var(--text-color-100);
   padding: 10px;
   margin: 10px;
   text-align: center;
   border-radius: 0.7rem;
+  flex-wrap: wrap;
 }
 
 .inner-div h5 {
@@ -67,7 +69,7 @@
 .inner-div button {
   padding: 6px 12px;
   background-color: #28a745;
-  color: #fff;
+  color: var(--text-color-100);
   border: none;
   cursor: pointer;
   border-radius: 0.7rem;

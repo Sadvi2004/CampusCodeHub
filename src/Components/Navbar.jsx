@@ -5,15 +5,15 @@ function Navbar() {
   return (
     <div className="container-nav">
       <p className="logo">CampusCodeHub</p>
-      <ul>
+      <ul className="nav-link-nav">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <li>Home</li>
+          <li className="nav-link-nav">Home</li>
         </Link>
         <Link to="/about" style={{ textDecoration: "none" }}>
-          <li>About</li>
+          <li className="nav-link-nav">About</li>
         </Link>
         <Link to="/Login" style={{ textDecoration: "none" }}>
-          <li>Login</li>
+          <li className="nav-link-nav">Login</li>
         </Link>
       </ul>
     </div>

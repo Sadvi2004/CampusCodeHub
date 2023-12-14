@@ -6,8 +6,8 @@ function About() {
     <div className="m-container">
       <h2 className="childclass">About CampusCodeHub</h2>
       <p className="subclass">
-        Welcome to Your Website, we are passionate about harnessing the power of
-        CampusCodeHub and enabling users to leverage its incredible
+        Welcome to Campus Code Hub, we are passionate about harnessing the,
+        power of CampusCodeHub and enabling users to leverage its incredible
         functionalities. CampusCodeHub has revolutionized how individuals and
         teams collaborate on projects, streamline workflows, and contribute to
         the development world. Here, we aim to elucidate the manifold uses and

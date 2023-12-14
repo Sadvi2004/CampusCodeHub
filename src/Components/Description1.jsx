@@ -1,11 +1,19 @@
 import React from "react";
 import AceEditor from "react-ace";
+import { Link } from "react-router-dom";
 // import "ace-build/src-noconflict/theme-dracula";
 
 function Description1() {
   return (
     <div className="afopen">
-      <h3>HospitalManagement</h3>
+      <div className="back-ln">
+        <h3>
+          HospitalManagement
+          <Link to="/MainPage" style={{ textDecoration: "none" }}>
+            <button className="btt-back">Back</button>
+          </Link>
+        </h3>
+      </div>
       <br />
       <p className="description-text">
         Hospital management involves overseeing the efficient functioning of

@@ -1,9 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Description2() {
   return (
     <div className="afopen">
-      <h3>Title - Restaurent Management</h3>
+      <div className="back-ln">
+        <h3>
+          Restaurent Management
+          <Link to="/MainPage" style={{ textDecoration: "none" }}>
+            <button className="btt-back">Back</button>
+          </Link>
+        </h3>
+      </div>
       <h4 className="description-title">Description</h4>
       <p className="description-text">
         Restaurant management involves overseeing the daily operations of a

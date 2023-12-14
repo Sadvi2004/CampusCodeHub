@@ -18,7 +18,23 @@ function Login() {
     },
     {
       username: "2211cs010064@mallareddyuniversity.ac.in",
-      password: "hiii",
+      password: "vishnu",
+    },
+    {
+      username: "2211cs010075@mallareddyuniversity.ac.in",
+      password: "navaneeth",
+    },
+    {
+      username: "2211cs0100258@mallareddyuniversity.ac.in",
+      password: "saikrishna",
+    },
+    {
+      username: "2211cs010028@mallareddyuniversity.ac.in",
+      password: "shan",
+    },
+    {
+      username: "2211cs010052@mallareddyuniversity.ac.in",
+      password: "kowshik",
     },
   ];
 
@@ -44,7 +60,7 @@ function Login() {
           <h2>Login</h2>
           <input
             type="mail"
-            className="mail bg-none"
+            className="mail bg-none-bg"
             placeholder="xyz@mallareddyuniversity.ac.in"
             onChange={(e) => {
               setEmail(e.target.value);
@@ -54,7 +70,7 @@ function Login() {
           <br />
           <input
             type="password"
-            className="password bg-none"
+            className="password bg-none-bg"
             placeholder="Password"
             onChange={(e) => {
               setPassword(e.target.value);

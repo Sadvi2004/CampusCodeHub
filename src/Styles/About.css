@@ -1,17 +1,19 @@
 m-container {
   text-wrap: wrap;
+  justify-content: center;
 }
 .subclass {
   margin-top: 3rem;
-  padding-left: 10rem;
+  padding-left: 16rem;
   padding-right: 10rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   display: flex;
+  /* justify-content: center; */
   align-items: center;
-  width: 100%;
+  width: 92.7%;
   height: 35rem;
-  color: #e5e5cb;
-  /* border: solid lawngreen; */
+  color: var(--text-color-100);
+  text-align: justify;
 }
 .childclass {
   display: flex;

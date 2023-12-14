@@ -1,9 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Description5() {
   return (
     <div className="afopen">
-      <h3>LibraryManagement</h3>
+      <div className="back-ln">
+        <h3>
+          LibraryManagement
+          <Link to="/MainPage" style={{ textDecoration: "none" }}>
+            <button className="btt-back">Back</button>
+          </Link>
+        </h3>
+      </div>
       <p className="description-text5">
         Library management involves the systematic organization, cataloging, and
         maintenance of resources within a library. It encompasses tasks like

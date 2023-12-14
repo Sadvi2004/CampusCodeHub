@@ -7,12 +7,6 @@ function Mainpage() {
   return (
     <div className="upper">
       <nav className="container3">
-        <input
-          type="search"
-          name="search"
-          className="search-contain"
-          placeholder="Search Applications"
-        />
         <Link to="/Login" style={{ textDecoration: "none" }}>
           <button className="bt-login">Login</button>
         </Link>
@@ -23,7 +17,6 @@ function Mainpage() {
             <th>Sno</th>
             <th>Application Name</th>
             <th>Description</th>
-            <th>Rating</th>
           </tr>
           <tr>
             <td>1</td>
@@ -32,9 +25,6 @@ function Mainpage() {
               <Link to="/description1" style={{ textDecoration: "none" }}>
                 <button className="open">Open</button>
               </Link>
-            </td>
-            <td>
-              <input type="number" min={1} max={10} />
             </td>
           </tr>
           <tr>
@@ -45,9 +35,6 @@ function Mainpage() {
                 <button className="open">Open</button>
               </Link>
             </td>
-            <td>
-              <input type="number" min={1} max={10} />
-            </td>
           </tr>
           <tr>
             <td>3</td>
@@ -57,9 +44,6 @@ function Mainpage() {
                 <button className="open">Open</button>
               </Link>
             </td>
-            <td>
-              <input type="number" min={1} max={10} />
-            </td>
           </tr>
           <tr>
             <td>4</td>
@@ -68,9 +52,6 @@ function Mainpage() {
               <Link to="/description5" style={{ textDecoration: "none" }}>
                 <button className="open">Open</button>
               </Link>
-            </td>
-            <td>
-              <input type="number" min={1} max={10} />
             </td>
           </tr>
         </table>
