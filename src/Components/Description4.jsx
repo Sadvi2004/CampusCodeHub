@@ -1,5 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import la from "../Images/layout.png";
+import homain from "../Images/homain.png";
+import hoprice from "../Images/hoprice.png";
+import main from "../Images/main.png";
+import payment from "../Images/payment.png"
+import hogo from "../Images/hogo.png";
+import sicf from "../Images/sicf.png";
+import ricf from "../Images/ricf.png";
 
 function Description4() {
   return (
@@ -29,7 +37,7 @@ function Description4() {
         <h3>Planning and Design:</h3>
         <p>
           <ol>
-            <img src="../images/layout.png" alt="#" />
+            <img src={la} alt="#" />
             <li>The website layout should be like above image</li>
             <li>Define the requirements and functionalities of your RMS.</li>
             <li>
@@ -135,29 +143,29 @@ function Description4() {
           <div className="mimg">
             <h3>Hostel Management home page</h3>
             <p className="mimage">
-              <img src="../images/homain.png" alt="" className="code-img" />
+              <img src={homain} alt="" className="code-img" />
               <p className="hsc">Hostelmanagement source code</p>
-              <img src="../images/main.png" alt="" className="code-img" />
+              <img src={main} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Hostel Management Payment page</h3>
             <p className="mimage">
-              <img src="../images/hoprice.png" alt="" className="code-img" />
+              <img src={hoprice} alt="" className="code-img" />
               <p className="hsc">Hostelmanagement source code</p>
-              <img src="../images/payment.png" alt="" className="code-img" />
+              <img src={payment} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Hostel Management services page</h3>
             <p className="mimage">
-              <img src="../images/hogo.png" alt="" className="code-img" />
+              <img src={hogo} alt="" className="code-img" />
               <p className="hsc">Student information source code</p>
-              <img src="../images/sicf.png" alt="" className="code-img" />
+              <img src={sicf} alt="" className="code-img" />
             </p>
             <p className="mimage">
               <p className="hsc">Room allocation source code</p>
-              <img src="../images/ricf.png" alt="" className="code-img" />
+              <img src={ricf} alt="" className="code-img" />
             </p>
           </div>
           <h2>Most used basic HTML TAGS to make website</h2>

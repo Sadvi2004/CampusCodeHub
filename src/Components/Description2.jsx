@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import lays from "../Images/layout.png";
+import up from "../Images/signup.png"
+import forms from "../Images/form.png";
+import login from "../Images/login.png";
+import logincode from "../Images/zlogin.png";
+import homes from "../Images/zhome.png";
+import homecode from "../Images/zohome.png";
 function Description2() {
   return (
     <div className="afopen">
@@ -31,7 +37,7 @@ function Description2() {
         <h3>Planning and Design:</h3>
         <p>
           <ol>
-            <img src="../images/layout.png" alt="#" />
+            <img src={lays} alt="#" />
             <li>The website layout should be like above image</li>
             <li>Define the requirements and functionalities of your RMS.</li>
             <li>
@@ -129,25 +135,25 @@ function Description2() {
           <div className="mimg">
             <h3>Zomato signUp page</h3>
             <p className="mimage">
-              <img src="../images/signup.png" alt="" className="code-img" />
+              <img src={up} alt="" className="code-img" />
               <p className="hsc">signup page source code</p>
-              <img src="../images/form.png" alt="" className="code-img" />
+              <img src={forms} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Zomato login page</h3>
             <p className="mimage">
-              <img src="../images/login.png" alt="" className="code-img" />
+              <img src={login} alt="" className="code-img" />
               <p className="hsc">login page source code</p>
-              <img src="../images/zlogin.png" alt="" className="code-img" />
+              <img src={logincode} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Zomato home page</h3>
             <p className="mimage">
-              <img src="../images/zhome.png" alt="" className="code-img" />
+              <img src={homes} alt="" className="code-img" />
               <p className="hsc">home page source code</p>
-              <img src="../images/zohome.png" alt="" className="code-img" />
+              <img src={homecode} alt="" className="code-img" />
             </p>
           </div>
           <h2>Most used basic HTML TAGS to make website</h2>

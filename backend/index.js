@@ -6,13 +6,9 @@ const cors = require("cors");
 app.use(cors());
 app.use("/files", express.static("files"));
 
-// const bcrypt = require("bcrypt.js");
-
-// const jwt = require("jsonwebtoken");
-// const jwt_SECRET = "dfajbhfjshjevbwajeh3i4283ud9w829";
 //database-------------------------------------------------------
 const mongoUrl =
-  "mongodb+srv://sadvibayyavarapu:sadvi134ash2004@cluster0.zyjmmfq.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://sadvibayyavarapu:sadvi134ash2004@cluster0.zyjmmfq.mongodb.net/?retryWrites=true&w=majorit";
 mongoose
   .connect(mongoUrl, {
     useNewUrlparser: true,

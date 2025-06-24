@@ -1,5 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ls from "../Images/layout.png"
+import lib1 from "../Images/lib (1).png";
+import mainlib from "../Images/mainlib.png";
+import Formlib from "../Images/Formlib.png";
+import libform from "../Images/libform.png";
+import libvideo from "../Images/lib video.png"
+import videolib from "../Images/videolib.png";
 
 function Description5() {
   return (
@@ -30,7 +37,7 @@ function Description5() {
         <h3>Planning and Design:</h3>
         <p>
           <ol>
-            <img src="../images/layout.png" alt="#" />
+            <img src={ls} alt="#" />
             <li>The website layout should be like above image</li>
             <li>Define the requirements and functionalities of your RMS.</li>
             <li>
@@ -132,25 +139,25 @@ function Description5() {
           <div className="mimg">
             <h3>Library Management home page</h3>
             <p className="mimage">
-              <img src="../images/lib (1).png" alt="" className="code-img" />
+              <img src={lib1} alt="" className="code-img" />
               <p className="hsc">librarymanagement source code</p>
-              <img src="../images/mainlib.png" alt="" className="code-img" />
+              <img src={mainlib} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Library Management Form page</h3>
             <p className="mimage">
-              <img src="../images/Formlib.png" alt="" className="code-img" />
+              <img src={Formlib} alt="" className="code-img" />
               <p className="hsc">librarymanagement Form page source code</p>
-              <img src="../images/libform.png" alt="" className="code-img" />
+              <img src={libform} alt="" className="code-img" />
             </p>
           </div>
           <div className="mimg">
             <h3>Library Management course page</h3>
             <p className="mimage">
-              <img src="../images/lib video.png" alt="" className="code-img" />
+              <img src={libvideo} alt="" className="code-img" />
               <p className="hsc">librarymanagement course learning code</p>
-              <img src="../images/videolib.png" alt="" className="code-img" />
+              <img src={videolib} alt="" className="code-img" />
             </p>
           </div>
           <h2>Most used basic HTML TAGS to make website</h2>
