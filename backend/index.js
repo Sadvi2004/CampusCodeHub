@@ -1,63 +1,76 @@
+require("dotenv").config(); // Fix: correct dotenv usage
+
 const express = require("express");
-const app = express();
 const mongoose = require("mongoose");
-app.use(express.json());
 const cors = require("cors");
+const multer = require("multer");
+
+const app = express();
+app.use(express.json());
 app.use(cors());
 app.use("/files", express.static("files"));
 
-//database-------------------------------------------------------
-const mongoUrl =
-  "mongodb+srv://sadvibayyavarapu:sadvi134ash2004@cluster0.zyjmmfq.mongodb.net/?retryWrites=true&w=majorit";
+// Database connection
+const mongoUrl = process.env.MONGO_URI;
+
 mongoose
   .connect(mongoUrl, {
-    useNewUrlparser: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
-  .then(() => {
-    console.log("connected to database");
-  })
-  .catch((e) => console.log(e));
-//api--------------------------------------------------------------
-app.listen(5000, () => {
-  console.log("sever started");
-});
+  .then(() => console.log("Connected to database"))
+  .catch((e) => console.error("Database connection error:", e));
 
-app.get("/", async (req, res) => {
-  res.send("Success!!!!");
-});
+// PDF Schema
+require("./pdfdetails");
+const Pdfschema = mongoose.model("pdfDetails");
 
-app.get("/get-files", async (req, res) => {
-  try {
-    Pdfschema.find({}).then((data) => {
-      res.send({ status: "super", data: data });
-    });
-  } catch (error) {}
-});
-
-//multer--------------------------------------------------------
-const multer = require("multer");
-
+// Multer setup
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "./files");
   },
   filename: function (req, file, cb) {
     const uniqueSuffix = Date.now();
-    cb(null, uniqueSuffix + file.originalname);
+    cb(null, uniqueSuffix + "-" + file.originalname);
   },
 });
-require("./pdfdetails");
-const Pdfschema = mongoose.model("pdfDetails");
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
+
+// Routes
+app.get("/", (req, res) => {
+  res.send("Success!!!!");
+});
+
+app.get("/get-files", async (req, res) => {
+  try {
+    const data = await Pdfschema.find({});
+    res.send({ status: "super", data });
+  } catch (error) {
+    console.error("Error fetching files:", error);
+    res.status(500).json({ status: "error", message: "Failed to fetch files" });
+  }
+});
 
 app.post("/upload-files", upload.single("file"), async (req, res) => {
-  console.log(req.file);
-  const title = req.body.title;
-  const fileName = req.file.filename;
   try {
-    await Pdfschema.create({ title: title, pdf: fileName });
+    if (!req.file) {
+      return res.status(400).json({ status: "error", message: "No file uploaded" });
+    }
+
+    const { title } = req.body;
+    const fileName = req.file.filename;
+
+    await Pdfschema.create({ title, pdf: fileName });
     res.send({ status: "okk" });
   } catch (error) {
-    res.json({ status: "error" });
+    console.error("Upload error:", error);
+    res.status(500).json({ status: "error", message: "File upload failed" });
   }
+});
+
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
 });
