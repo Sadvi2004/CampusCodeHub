@@ -7,7 +7,7 @@ const multer = require("multer");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ credentials: true, origin: "https://campus-code-hub.vercel.app" }));
 app.use("/files", express.static("files"));
 
 // Database connection

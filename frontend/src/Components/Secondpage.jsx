@@ -12,7 +12,7 @@ function Secondpage() {
     getPdf();
   }, []);
   const getPdf = async () => {
-    const result = await axios.get("http://localhost:5000/get-files");
+    const result = await axios.get("https://campuscodehub-1.onrender.com/get-files");
     console.log(result.data.data);
     setAllImage(result.data.data);
   };
@@ -25,7 +25,7 @@ function Secondpage() {
     formData.append("file", file);
     console.log("uploded", title, file);
     const result = await axios.post(
-      "http://localhost:5000/upload-files",
+      "https://campuscodehub-1.onrender.com/upload-files",
       formData,
       {
         headers: { "Content-Type": "multipart/form-data" },
@@ -38,7 +38,7 @@ function Secondpage() {
     }
   };
   const showPdf = (pdf) => {
-    window.open(`http://localhost:5000/files/${pdf}`, "_blank", "noreferrer");
+    window.open(`https://campuscodehub-1.onrender.com/files/${pdf}`, "_blank", "noreferrer");
   };
   return (
     <div className="sp">
@@ -68,15 +68,15 @@ function Secondpage() {
           {allImage == null
             ? ""
             : allImage.map((data) => {
-                return (
-                  <div className="inner-div">
-                    <h5>Title: {data.title}</h5>
-                    <button className="pp" onClick={() => showPdf(data.pdf)}>
-                      Download
-                    </button>
-                  </div>
-                );
-              })}
+              return (
+                <div className="inner-div">
+                  <h5>Title: {data.title}</h5>
+                  <button className="pp" onClick={() => showPdf(data.pdf)}>
+                    Download
+                  </button>
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>
@@ -84,3 +84,4 @@ function Secondpage() {
 }
 
 export default Secondpage;
+// http://localhost:5000/get-files
