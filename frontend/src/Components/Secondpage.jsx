@@ -84,4 +84,3 @@ function Secondpage() {
 }
 
 export default Secondpage;
-// http://localhost:5000/get-files
