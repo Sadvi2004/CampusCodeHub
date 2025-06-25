@@ -11,15 +11,11 @@ app.use(cors());
 app.use("/files", express.static("files"));
 
 // Database connection
-const mongoUrl = process.env.MONGO_URI;
 
-mongoose
-  .connect(mongoUrl, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Connected to database"))
-  .catch((e) => console.error("Database connection error:", e));
+  .catch((err) => console.error("Database connection error:", err));
+
 
 // PDF Schema
 require("./pdfdetails");
